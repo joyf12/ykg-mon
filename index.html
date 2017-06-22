@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"> 
+   <title>易客购</title>
+   <meta http-equive='X-UA-Compatible' content='IE=edge'>
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">-->
+   <!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+   <!--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+   <link rel="stylesheet" href='./lib/bootstrap/css/bootstrap.css'>
+   <link rel="stylesheet" href="./css/style.css">  
+   <script src="./lib/jquery/jquery-1.12.4.js"></script>
+   <script src="./lib/bootstrap/js/bootstrap.js"></script>
+   <script src="./lib/bootstrap/js/template.js"></script>
+   
+   <script src="./js/index.js"></script>
+
+   <!--[if lt IE 9]>
+	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+   <!--[endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top">
+			易客购商城收银系统
+		</div>
+		<!-- 商品 -->
+		<div class="container">
+		   <div class="row">
+		      <div class="col-xs-3 col-sm-3">
+		         <strong>商品条码</strong>
+		      </div>
+		      <div class="col-xs-4 col-sm-4">
+		         <strong>商品名称</strong>
+		      </div>
+		      <div class="col-xs-1 col-sm-1">
+		         <strong>原价</strong>
+		      </div>
+		      <div class="col-xs-1 col-sm-1">
+		         <strong>折扣</strong>
+		      </div>
+		      <div class="col-xs-1 col-sm-1">
+		         <strong>数量</strong>
+		      </div>
+		      <div class="col-xs-1 col-sm-1">
+		         <strong>现价</strong>
+		      </div>
+		      <div class="col-xs-1 col-sm-1">
+		         <strong>小计</strong>
+		      </div>
+		   </div>
+		   
+		</div>
+		<!-- 商品统计 -->
+		<div class="clearfix" style="margin:20px 10px;">
+			<span class="fl">共计<strong class="count">0</strong>件商品</span>
+			<button type="button" class="btn btn-warning fr rem">删除</button>
+		</div>
+		<!-- 底部 -->
+		<div class="footer">
+			<div class="fl">
+				<input class="defa" type="text" placeholder="条码/拼音码/品名" autofocus>
+				<i class="glyphicon glyphicon-barcode" style="color:#000"></i>
+				<!-- <input class="ipt" type="text" placeholder="输入价格无码收银"> -->
+			</div>
+			<div class="fr">
+				<button class="btn btn-default set" type="submit">收款：￥<strong class="price">0</strong></button>
+				<!-- 收款：￥<span>0</span> -->
+			</div>
+		</div>
+
+	</div>
+	<!-- 调用商品详情模版 -->
+	<!-- <script type="text/template" id="Menu">
+				遍历
+				{{each result as item}}
+				{{ each arr as item}}
+					<div class="row">
+	
+				      <div class="col-xs-3 col-sm-3">
+				         <p>{{item.barcode}}</p>
+				      </div>
+				      <div class="col-xs-4 col-sm-4">
+				         <p>{{item.name}}</p>
+				      </div>
+				      <div class="col-xs-1 col-sm-1">
+				         <p>{{item.price}}</p>
+				      </div>
+				      <div class="col-xs-1 col-sm-1">
+				         <p>{{item.discount}}</p>
+				      </div>
+				      <div class="col-xs-1 col-sm-1">
+				         <p>{{item.number}}</p>
+				      </div>
+				      <div class="col-xs-1 col-sm-1">
+				         <p>{{item.nowprice}}</p>
+				      </div>
+				      <div class="col-xs-1 col-sm-1">
+				         <p>{{item.totalmoney}}</p>
+				      </div>
+				   </div>
+				{{/each}} arr:数组 item:每一项
+				
+			</script> -->
+</body>
+</html>
